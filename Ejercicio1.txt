@@ -1,0 +1,21 @@
+lenguaje natural: la funcion factorial toma como parametro un numero entero positivo,
+si el numero es igual o menor a 1 reotrna 1, en caso contrario se ejecuta de manera recursiva multiplicando
+el valor numerico actual * la siguiente iteracion de la funcion factorial (factorial(n - 1))
+
+precondiciones:
+  - el numero debe ser un numero natural positivo
+postcondiciones:
+  - se retorna el factorial del numero dado
+
+pseudocodigo:
+factorial (numero de tipo int)
+com
+  si numero <= 1 entonces
+    retornar 1 // caso base
+  sino
+    retornar factorial(numero - 1) * numero
+  finsi
+fin
+
+El algoritmo es de O(n) ya que se recorre el numero de veces dado, siempre reduciéndose en 1.
+osea (n - 1) para llegar al caso base.

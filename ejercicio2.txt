@@ -1,0 +1,14 @@
+pseudocodigo:
+SumaLineal(A, n de tipo entero):
+COM
+SI n = 1
+  devolver A[0]
+SINO
+  devolver SumaLineal(A, n - 1) + A[n - 1]
+FIN
+
+Se trata de un algoritmo de O(N) ya que pasa por por todos los numeros desde N
+hasta 0
+
+Tomando como precondicion que el numero de entrada sea 1 o mayor, se puede asegurar
+que se va a llegar al caso base.
